@@ -1,16 +1,16 @@
 /************LET*************/
-//let declare une variable
+//let déclare une variable.
 let cours = 'hello world !';
 console.log(cours + '// avant mise a jour ');
 
-// on attribue a cours  une autre valeur
+//Attribue à cours une autre valeur.
  cours = 'goodbye world !';
 console.log(cours + '// apres mise a jour ');
 
-//let a des variable qui son evolutive
+//let à des variables qui sont évolutives
 
 /************CONST*************/
-//const est une variable impossible a changer donc qui son immuable
+//const crée, une variable impossible a changé donc qui est immuable.
 
 const prenom = 'Patrice';
 console.log(prenom)
