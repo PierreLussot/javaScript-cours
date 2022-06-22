@@ -5,7 +5,7 @@ function faireQuelueChose() {
 
 /************DEUXIEME FACON DE FAIRE UNE FONCTION*************/
 const faireUneTache =  () => {
-    console.log('faire une tache ');
+    console.log('faire une tache');
 }
 
 faireQuelueChose();
