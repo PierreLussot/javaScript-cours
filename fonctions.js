@@ -12,7 +12,7 @@ faireQuelueChose();
 
 faireUneTache();
 
-/************FONCTION AVEC PARAMETRE*************/
+/************FONCTION AVEC PARAMETRE**************/
 
 const faireUneAutreTache =  (type) => {
     //le + sert a concatener
