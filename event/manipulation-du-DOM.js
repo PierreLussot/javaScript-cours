@@ -1,5 +1,5 @@
 //premiere facon de selectionné
-//on selection sur notre document le id = "btn" dans le HTML
+//Sélection sur notre document le id = "btn" dans le HTML
 const btn = document.querySelector('#btn');
 const btn2 = document.querySelector('#btn2');
 //deuxieme facon de selectionné
