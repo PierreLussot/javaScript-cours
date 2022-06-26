@@ -1,22 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
     <title>manipulation du DOM en javaScript</title>
-</head>
-<body>
-<h1>manipulation du DOM en javaScript</h1>
+  </head>
+  <body>
+    <h1>manipulation du DOM en javaScript</h1>
 
-<div class="clickEvent">
-    <button id="btn">Appuyer !</button>
-    <button id="btn2">Appuyer !</button>
-    <br>
-    <img src="https://cdn.pixabay.com/photo/2022/06/08/02/44/cherry-7249543_960_720.jpg"
-         alt=""
-         id="img">
-</div>
-<script src="manipulation-du-DOM.js"></script>
+    <div class="clickEvent">
+      <button id="btn">Appuyer pour afficher l'image !</button>
+      <br />
+      <img
+        src="https://cdn.pixabay.com/photo/2022/06/08/02/44/cherry-7249543_960_720.jpg"
+        alt=""
+        id="img"
+      />
+    </div>
+    <div class="mouseEvent">
+      <div>horizontal :<span class="horizontal">0</span></div>
+      <div>vertical :<span class="vertical"> 0</span></div>
+    </div>
 
-</body>
+    <div>
+      <button id="btn2">Appuyer pour changer le texte !</button>
+      <div id="container_para">
+        <p id="para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+          ratione beatae maxime labore aliquid error ipsam sapiente quam minus
+          accusamus! Sunt exercitationem ad voluptatibus a minima dolorum,
+          dignissimos molestias explicabo.
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <div class="textEvent">
+        <div>affichage du texte de l'input: <span id="nom"> </span></div>
+        <label for="input">entre votre nom </label>
+        <input type="text" id="input" />
+      </div>
+    </div>
+
+    <script src="manipulation-du-DOM.js"></script>
+  </body>
 </html>
