@@ -40,9 +40,10 @@ position: relative;
     margin: 5px;
 }
 .textEvent{
-   
+   position: relative;
   border: 2px #26b41a solid;
   width: 200px;
   border-radius: 30px;
-  
+  left: 50%;
+  transform: translate(-50%);
 }
