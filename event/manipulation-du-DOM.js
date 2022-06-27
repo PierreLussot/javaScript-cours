@@ -16,16 +16,22 @@ btn.addEventListener("click", (e) => {
 });
 /************************************************************ */
 
+//Recherche des classes incorporé dans des variables
 const mouveEvent = document.querySelector(".mouseEvent");
 const horizontal = document.querySelector(".horizontal");
 const vertical = document.querySelector(".vertical");
 
+//Événement au mouvement de la souris
 mouveEvent.addEventListener("mousemove", (e) => {
-  //innerHTML
+  //innerHTML = on incorpore du texte html
+  //ici dans la balise où il y a la classe horizontale & vertical
   horizontal.innerHTML = e.x;
   vertical.innerHTML = e.y;
-
+  //dans la balise avec la class mouseEvent .style lui donne des comportements de css
+  //tel que color /border /background .ect
   mouveEvent.style.left = (e.x / window.innerWidth) * 100 + "%";
+  mouveEvent.style.background = "blue";
+
   //console.log(e);
 });
 
@@ -42,10 +48,34 @@ btn2.addEventListener("click", (e) => {
 });
 
 /***************************************************************** */
-
+//Prends l'id input ajoute un événement à input.
 document.getElementById("input").addEventListener("input", (e) => {
+  //prend l'id de nom
   let affichage_nom = document.getElementById("nom");
-
+  //Et affiche le résultat de la valeur de input grace e.target.value
   affichage_nom.innerHTML = e.target.value;
   console.log(affichage_nom);
+});
+
+/**************************************************************** */
+
+let theme = document.querySelectorAll(".theme");
+
+theme.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    document.body.classList.remove("darkTheme", "salmonTheme", "yellowTheme");
+    switch (e.target.id) {
+      case "dark":
+        document.body.classList.add("darkTheme");
+        break;
+      case "salmon":
+        document.body.classList.add("salmonTheme");
+        break;
+      case "yellow":
+        document.body.classList.add("yellowTheme");
+        break;
+      default:
+        null;
+    }
+  });
 });

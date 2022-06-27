@@ -47,3 +47,39 @@ position: relative;
   left: 50%;
   transform: translate(-50%);
 }
+.themeContainer{
+  position: fixed;
+  top: 0;
+}
+.theme{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+#yellow{
+  background-color: yellow;
+}
+.darkTheme{
+  background-color: black;
+  color: white;
+}
+.salmonTheme{
+  background-color: salmon;
+  color: white;
+}
+.yellowTheme{
+  background-color: yellow;
+  color: white;
+}
+
+/****************dark mode****************/
+#dark{
+  background-color: black;
+}
+/****************dark salmon****************/
+#salmon{
+  background-color: salmon;
+}
+/****************dark yellow****************/
