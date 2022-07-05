@@ -49,17 +49,23 @@ btn2.addEventListener("click", (e) => {
 
 /***************************************************************** */
 //Prends l'id input ajoute un événement à input.
-document.getElementById("input").addEventListener("input", (e) => {
+let input = document.getElementById("input");
+
+input.addEventListener("input", (e) => {
+  console.log("input marche");
   //prend l'id de nom
   let affichage_nom = document.getElementById("nom");
   //Et affiche le résultat de la valeur de input grace e.target.value
   affichage_nom.innerHTML = e.target.value;
-  console.log(affichage_nom);
+  console.dir(affichage_nom);
 });
+/****************************************************************** */
 
-/**************************************************************** */
+/******************************mode ********************************** */
 
 let theme = document.querySelectorAll(".theme");
+
+//console.log(theme);
 
 theme.forEach((item) => {
   item.addEventListener("click", (e) => {
@@ -74,8 +80,18 @@ theme.forEach((item) => {
       case "yellow":
         document.body.classList.add("yellowTheme");
         break;
+      case "white":
+        document.body.classList.add("white");
+        break;
       default:
         null;
     }
   });
+});
+
+let input2 = document.querySelector("#input2");
+input2.addEventListener("click", (e) => {
+  let c = document.getElementById("c");
+
+  c.innerHTML = e.target.value;
 });

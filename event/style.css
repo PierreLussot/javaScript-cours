@@ -19,7 +19,7 @@ img {
 }
 
 .mouseEvent {
-position: relative;
+  position: relative;
   border: 2px rgb(255, 96, 96) solid;
   width: 200px;
   border-radius: 30px;
@@ -27,7 +27,7 @@ position: relative;
   transform: translate(-50%);
 }
 .container_para {
-    margin: 10px;
+  margin: 10px;
   border: 1px black solid;
 }
 .para {
@@ -35,51 +35,72 @@ position: relative;
   color: chartreuse;
   margin: 0;
 }
-#para
-{
-    margin: 5px;
+#para {
+  margin: 5px;
 }
-.textEvent{
-   position: relative;
+.textEvent {
+  position: relative;
   border: 2px #26b41a solid;
   width: 200px;
   border-radius: 30px;
   left: 50%;
   transform: translate(-50%);
 }
-.themeContainer{
+.themeContainer {
   position: fixed;
   top: 0;
 }
-.theme{
+.theme {
   width: 30px;
   height: 30px;
   cursor: pointer;
   border-radius: 30px;
+  color: white;
+  border: #26b41a 1px solid;
 }
 
-#yellow{
+#yellow {
   background-color: yellow;
 }
-.darkTheme{
+.darkTheme {
   background-color: black;
   color: white;
+ 
+  transition: 2s;
 }
-.salmonTheme{
+.salmonTheme {
   background-color: salmon;
   color: white;
+  transition: 2s;
 }
-.yellowTheme{
+.yellowTheme {
   background-color: yellow;
   color: white;
+  transition: 2s;
+}
+.whiteTheme {
+  background-color: white;
+  color: white;
+  transition: 5s;
 }
 
 /****************dark mode****************/
-#dark{
+#dark {
   background-color: black;
+   
 }
 /****************dark salmon****************/
-#salmon{
+#salmon {
   background-color: salmon;
+   
+}
+/****************yellow salmon****************/
+#yellow {
+  background-color: yellow;
+  
 }
 /****************dark yellow****************/
+#white {
+  background-color: white;
+  
+}
