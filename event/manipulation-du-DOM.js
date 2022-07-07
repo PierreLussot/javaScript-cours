@@ -62,16 +62,19 @@ input.addEventListener("input", (e) => {
 /****************************************************************** */
 
 /******************************mode ********************************** */
-
+//On va aller chercher la variable thème.
 let theme = document.querySelectorAll(".theme");
-
-//console.log(theme);
-
+//On parcourt le thème avec un forEach
+ //On récupère les éléments de thèmes avec item.  
 theme.forEach((item) => {
+console.log(item);
   item.addEventListener("click", (e) => {
+    //On supprime les class rajouter à chaque click.
     document.body.classList.remove("darkTheme", "salmonTheme", "yellowTheme");
+    //On switch si l'événement récupère l'id /dark/salmon/...Etc
     switch (e.target.id) {
       case "dark":
+        //On ajoute du coup au body la class voulu.
         document.body.classList.add("darkTheme");
         break;
       case "salmon":
@@ -89,9 +92,4 @@ theme.forEach((item) => {
   });
 });
 
-let input2 = document.querySelector("#input2");
-input2.addEventListener("click", (e) => {
-  let c = document.getElementById("c");
 
-  c.innerHTML = e.target.value;
-});
