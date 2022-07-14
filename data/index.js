@@ -34,12 +34,11 @@ const input = document.getElementById("input");
 const video = document.getElementById("video");
 
 let link = "";
-
-
+ 
 input.addEventListener("input", (e) => {
-    console.log(link);
+
   changeLink(e.target.value);
-   
+ console.log(link);
   if (link) {
     video.innerHTML = `
   <iframe
@@ -55,10 +54,24 @@ input.addEventListener("input", (e) => {
 });
 const changeLink = function (linkToChange) {
   let enbed = linkToChange.replace("watch?v=", "embed/");
-  link = enbed;
+  return (link = enbed);
 };
-
 
 //https://www.youtube.com/embed/QB1DTl7HFnc
 //https://www.youtube.com/watch?v=gpqoZQ8GNK8
 //https://www.youtube.com/watch?v=PnJtO7_B8EI
+
+
+let mot = 'l';
+ 
+function name(params) {
+  let e = params.toUpperCase();
+  mot = e
+   
+}
+
+if (mot) {
+  `${mot}`
+console.log(mot);
+}
+ 
